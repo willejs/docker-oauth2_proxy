@@ -4,7 +4,7 @@ MAINTAINER Will Salt <williamejsalt@gmail.com>
 
 ENV OAUTH2_RELEASE_URL=https://github.com/bitly/oauth2_proxy/releases/download/v2.1/oauth2_proxy-2.1.linux-amd64.go1.6.tar.gz
 
-RUN apk --update add tar
+RUN apk --update add tar ca-certificates
 
 RUN adduser -S oauth2proxy
 
